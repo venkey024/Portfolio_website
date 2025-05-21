@@ -2,31 +2,30 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Professional Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              'navy': '#0a192f',
-              'light-navy': '#112240',
-              'lightest-navy': '#233554',
-              'slate': '#8892b0',
-              'light-slate': '#a8b2d1',
-              'lightest-slate': '#ccd6f6',
-              'white': '#e6f1ff',
-              'sky': {
-                400: '#38bdf8',
-                500: '#0ea5e9',
-                600: '#0284c7',
-              },
+              navy: '#0a192f',
+              lightNavy: '#1e293b',
+              slate: '#475569',
+              lightSlate: '#94a3b8',
+              lightestSlate: '#e2e8f0',
+              white: '#f8fafc',
+              accent: '#3b82f6',        // Blue
+              primaryText: '#0f172a',   // Dark slate for text
+              secondary: '#64748b',     // Subheading gray
             },
             fontFamily: {
-              'sans': ['Inter', 'sans-serif'],
-              'mono': ['Fira Code', 'monospace'],
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
             },
             animation: {
               'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
@@ -41,23 +40,71 @@
         }
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
-  }
-}
-</script>
-</head>
-  <body class="bg-yellow-to-br from-[#fdf6e3] via-[#f5e1ff] to-[#c7d2fe] text-slate-800 font-sans antialiased bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat">
-    <div id="root"></div>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles (Optional if you have index.css) -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body class="bg-gradient-to-br from-[#f8fafc] via-[#e2e8f0] to-[#cbd5e1] text-[#0f172a] font-sans antialiased bg-[url('https://www.transparenttextures.com/patterns/pw-maze-white.png')] bg-repeat min-h-screen">
+
+    <div id="root">
+      <header class="p-6 shadow-md bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold text-navy">Venkatesh Portfolio</h1>
+          <nav class="space-x-6 text-slate-700">
+            <a href="#about" class="hover:text-accent">About</a>
+            <a href="#projects" class="hover:text-accent">Projects</a>
+            <a href="#contact" class="hover:text-accent">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="max-w-4xl mx-auto px-6 py-12">
+        <section id="about" class="mb-16">
+          <h2 class="text-3xl font-semibold mb-4">👋 Hello, I'm Venkatesh</h2>
+          <p class="text-lg text-slate-700 leading-relaxed">
+            A data analyst and Python developer passionate about transforming data into insights. I specialize in SQL, Power BI, and automation with Python. I enjoy solving business problems using technology and data visualization.
+          </p>
+        </section>
+
+        <section id="projects" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4 text-navy">🚀 Projects</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-4 bg-white shadow-md rounded-xl transition hover:shadow-xl">
+              <h3 class="text-xl font-semibold text-primaryText">User Authentication System</h3>
+              <p class="text-sm text-slate-600 mt-2">Built a secure registration and login system using Python and SQL with real-time validations and reporting tools.</p>
+            </div>
+            <div class="p-4 bg-white shadow-md rounded-xl transition hover:shadow-xl">
+              <h3 class="text-xl font-semibold text-primaryText">People Analytics Dashboard</h3>
+              <p class="text-sm text-slate-600 mt-2">Designed Power BI dashboards for 10,000+ BFSI employees highlighting attrition, productivity, and workforce stability.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+          <h2 class="text-2xl font-semibold mb-4 text-navy">📬 Contact</h2>
+          <p class="text-slate-700">Feel free to reach out via email or connect on LinkedIn!</p>
+          <div class="mt-4 space-x-4">
+            <a href="mailto:venkateshbyna14@gmail.com" class="text-blue-600 underline">Email</a>
+            <a href="https://linkedin.com/in/byna-venkatesh-672833243" target="_blank" class="text-blue-600 underline">LinkedIn</a>
+            <a href="https://github.com/venkey024" target="_blank" class="text-blue-600 underline">GitHub</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="text-center text-sm text-slate-500 py-6">
+        © 2025 Byna Venkatesh — Built with Tailwind CSS
+      </footer>
+    </div>
+
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
-<link rel="stylesheet" href="index.css">
-<script src="index.tsx" type="module"></script>
