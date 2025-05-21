@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SocialLink } from '../types';
 
@@ -11,7 +10,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ name, title, bio, socialLinks }) => {
   return (
-    <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center justify-center py-20 bg-navy">
+    <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center justify-center py-20 bg-white">
       <div className="text-center max-w-3xl px-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <img 
           src={`https://picsum.photos/seed/${name.split(' ').join('')}/150/150`} 

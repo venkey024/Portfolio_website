@@ -28,7 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
   };
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-light-navy shadow-lg' : 'bg-navy'}`}>
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-light-navy shadow-lg' : 'bg-white'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <a href="#" className="text-2xl font-bold text-sky-400 hover:text-sky-500 transition-colors">
