@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Skill, SkillCategory } from '../types';
 import { SkillBadge } from './SkillBadge';
@@ -30,7 +29,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ skills }) => {
       {categoryOrder.map((category, catIndex) => (
         categorizedSkills[category] && (
           <div key={category} className="mb-10 animate-fade-in-up" style={{ animationDelay: `${0.2 * (catIndex + 1)}s` }}>
-            <h3 className="text-2xl font-semibold text-lightest-slate mb-6 text-center md:text-left">
+            <h3 className="text-2xl font-semibold text-black mb-6 text-center md:text-left">
               {category}
             </h3>
             <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4">

@@ -11,7 +11,7 @@ export const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, title, child
   return (
     <section id={id} className={`py-16 md:py-24 ${className}`}>
       <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-purple-700 drop-shadow-lg">
+        <h2 className="text-3xl sm:text-4xl font-bold text-black drop-shadow-lg">
           {title}
           <span className="text-sky-400">.</span>
         </h2>
