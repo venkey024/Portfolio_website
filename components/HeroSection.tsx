@@ -17,22 +17,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ name, title, bio, soci
           <div className="md:w-2/5 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="relative group">
               {/* Main Image */}
-              <div className="relative z-10 overflow-hidden rounded-2xl">
+              <div className="relative z-10 overflow-hidden rounded-xl">
                 <img 
                   src="/passphoto-min.jpg"
                   alt={name}
-                  className="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-105" 
+                  className="w-56 h-72 object-cover transform transition-transform duration-500 group-hover:scale-105" 
                 />
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-sky-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-sky-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               
               {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-t-4 border-r-4 border-sky-500/30 rounded-tr-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-4 border-l-4 border-sky-500/30 rounded-bl-2xl" />
+              <div className="absolute -top-3 -right-3 w-20 h-20 border-t-2 border-r-2 border-sky-500/20 rounded-tr-xl" />
+              <div className="absolute -bottom-3 -left-3 w-20 h-20 border-b-2 border-l-2 border-sky-500/20 rounded-bl-xl" />
               
               {/* Background Glow */}
-              <div className="absolute -inset-4 bg-sky-500/5 rounded-3xl -z-10 transform rotate-6 transition-transform duration-500 group-hover:rotate-8" />
+              <div className="absolute -inset-3 bg-sky-500/5 rounded-2xl -z-10 transform rotate-6 transition-transform duration-500 group-hover:rotate-8" />
             </div>
           </div>
           
