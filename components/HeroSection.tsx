@@ -10,50 +10,78 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ name, title, bio, socialLinks }) => {
   return (
-    <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center py-20 bg-white">
+    <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+          {/* Photo Container */}
           <div className="md:w-2/5 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-              <img 
-                src="/passphoto-min.jpg"
-                alt={name}
-                className="w-64 h-80 object-cover shadow-2xl" 
-              />
-              <div className="absolute inset-0 border-2 border-sky-400 -m-4 z-[-1]"></div>
+            <div className="relative group">
+              {/* Main Image */}
+              <div className="relative z-10 overflow-hidden rounded-2xl">
+                <img 
+                  src="/passphoto-min.jpg"
+                  alt={name}
+                  className="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-105" 
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-sky-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 border-t-4 border-r-4 border-sky-500/30 rounded-tr-2xl" />
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-4 border-l-4 border-sky-500/30 rounded-bl-2xl" />
+              
+              {/* Background Glow */}
+              <div className="absolute -inset-4 bg-sky-500/5 rounded-3xl -z-10 transform rotate-6 transition-transform duration-500 group-hover:rotate-8" />
             </div>
           </div>
           
-          <div className="md:w-3/5 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-4 drop-shadow-lg tracking-tight">
-              Hi, I'm <span className="text-sky-600 font-extrabold">{name.split(' ').map(word => word[0] + word.slice(1).toLowerCase()).join(' ')}</span>
-            </h1>
-            <p className="text-xl sm:text-2xl text-slate-700 mb-6 font-mono font-semibold drop-shadow-sm tracking-wide">
-              {title}
-            </p>
-            <p className="text-lg text-light-slate leading-relaxed mb-8 max-w-2xl">
+          {/* Content Container */}
+          <div className="md:w-3/5 animate-fade-in-up space-y-6" style={{ animationDelay: '0.2s' }}>
+            <div className="space-y-4">
+              <h2 className="text-lg font-mono text-sky-600 tracking-wider">Welcome to my portfolio</h2>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 tracking-tight">
+                Hi, I'm <span className="text-sky-600 font-extrabold inline-block hover:scale-105 transition-transform duration-300">
+                  {name.split(' ').map(word => word[0] + word.slice(1).toLowerCase()).join(' ')}
+                </span>
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-600 font-mono">
+                {title}
+              </p>
+            </div>
+            
+            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
               {bio}
             </p>
-            <div className="flex space-x-6 mb-10">
+
+            <div className="flex items-center space-x-6">
               {socialLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={link.name}
-                  className="text-slate hover:text-sky-400 transition-colors duration-300"
+                  className="text-gray-600 hover:text-sky-500 transform hover:scale-110 transition-all duration-300"
                 >
-                  {React.cloneElement(link.icon as React.ReactElement<React.SVGProps<SVGSVGElement>>, { className: "w-7 h-7 sm:w-8 sm:h-8" })}
+                  {React.cloneElement(link.icon as React.ReactElement<React.SVGProps<SVGSVGElement>>, { 
+                    className: "w-6 h-6" 
+                  })}
                 </a>
               ))}
             </div>
-            <a
-              href="#projects"
-              className="inline-block bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-            >
-              View My Work
-            </a>
+
+            <div className="pt-4">
+              <a
+                href="#projects"
+                className="inline-flex items-center px-6 py-3 bg-sky-500 text-white font-medium rounded-lg 
+                  shadow-lg hover:bg-sky-600 transform hover:-translate-y-1 transition-all duration-300
+                  relative overflow-hidden group"
+              >
+                <span className="relative z-10">View My Work</span>
+                <div className="absolute inset-0 bg-sky-400 transform scale-x-0 group-hover:scale-x-100 
+                  transition-transform duration-300 origin-left"></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
