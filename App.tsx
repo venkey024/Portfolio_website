@@ -38,7 +38,7 @@ const App: React.FC = () => {
           <SkillsSection skills={portfolioData.skills} />
         </SectionWrapper>
         <SectionWrapper id="contact" title="Get In Touch">
-          <ContactSection email={portfolioData.contact.email} socialLinks={portfolioData.contact.social} />
+          <ContactSection contact={portfolioData.contact} />
         </SectionWrapper>
       </main>
       <Footer name={portfolioData.name} />

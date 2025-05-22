@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -44,17 +43,21 @@ export interface SocialLink {
   icon: React.ReactNode;
 }
 
+export interface Contact {
+  phone: string;
+  email: string;
+  location: string;
+  social: SocialLink[];
+}
+
 export interface PortfolioData {
   name: string;
   title: string;
   bio: string;
   aboutMe: string;
   navLinks: NavLink[];
+  contact: Contact;
   projects: Project[];
   experiences: Experience[];
   skills: Skill[];
-  contact: {
-    email: string;
-    social: SocialLink[];
-  };
 }

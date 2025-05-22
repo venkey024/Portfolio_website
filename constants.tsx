@@ -19,6 +19,11 @@ export const portfolioData: PortfolioData = {
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
   ],
+  contact: {
+    phone: "7995798027",
+    email: "venkateshbyna14@gmail.com",
+    location: "Andhra Pradesh, India",
+  },
   projects: [
     {
       id: "proj1",
@@ -76,7 +81,9 @@ export const portfolioData: PortfolioData = {
     { id: "sk12", name: "Git/GitHub", category: SkillCategory.TOOLS, icon: <GitHubIcon className="w-5 h-5" /> },
   ],
   contact: {
+    phone: "7995798027",
     email: "venkateshbyna14@gmail.com",
+    location: "Andhra Pradesh, India",
     social: [
       { name: "GitHub", url: "https://github.com/venkey024", icon: <GitHubIcon className="w-6 h-6" /> },
       { name: "LinkedIn", url: "https://linkedin.com/in/byna-venkatesh-672833243", icon: <LinkedInIcon className="w-6 h-6" /> },
