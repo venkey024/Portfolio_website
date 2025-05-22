@@ -10,43 +10,52 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ name, title, bio, socialLinks }) => {
   return (
-    <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center justify-center py-20 bg-white">
-      <div className="text-center max-w-3xl px-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-        <img 
-          src="/passphoto-min.jpg"
-          alt={name}
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-sky-400 shadow-xl object-cover" 
-        />
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-3 drop-shadow-lg tracking-tight">
-          Hi, I'm <span className="text-sky-600 font-extrabold">{name.split(' ').map(word => word[0] + word.slice(1).toLowerCase()).join(' ')}</span>
-        </h1>
-        <p className="text-xl sm:text-2xl text-slate-700 mb-5 font-mono font-semibold drop-shadow-sm tracking-wide">
-          {title}
-        </p>
-        <p className="text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto">
-          {bio}
-        </p>
-        <div className="flex justify-center space-x-6 mb-10">
-          {socialLinks.map((link) => (
+    <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+          <div className="md:w-2/5 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div className="relative">
+              <img 
+                src="/passphoto-min.jpg"
+                alt={name}
+                className="w-64 h-80 object-cover shadow-2xl" 
+              />
+              <div className="absolute inset-0 border-2 border-sky-400 -m-4 z-[-1]"></div>
+            </div>
+          </div>
+          
+          <div className="md:w-3/5 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-4 drop-shadow-lg tracking-tight">
+              Hi, I'm <span className="text-sky-600 font-extrabold">{name.split(' ').map(word => word[0] + word.slice(1).toLowerCase()).join(' ')}</span>
+            </h1>
+            <p className="text-xl sm:text-2xl text-slate-700 mb-6 font-mono font-semibold drop-shadow-sm tracking-wide">
+              {title}
+            </p>
+            <p className="text-lg text-light-slate leading-relaxed mb-8 max-w-2xl">
+              {bio}
+            </p>
+            <div className="flex space-x-6 mb-10">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
+                  className="text-slate hover:text-sky-400 transition-colors duration-300"
+                >
+                  {React.cloneElement(link.icon as React.ReactElement<React.SVGProps<SVGSVGElement>>, { className: "w-7 h-7 sm:w-8 sm:h-8" })}
+                </a>
+              ))}
+            </div>
             <a
-              key={link.name}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={link.name}
-              className="text-slate hover:text-sky-400 transition-colors duration-300"
+              href="#projects"
+              className="inline-block bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
-              {/* FIX: Specify SVGProps for the icon element to allow className prop in React.cloneElement */}
-              {React.cloneElement(link.icon as React.ReactElement<React.SVGProps<SVGSVGElement>>, { className: "w-7 h-7 sm:w-8 sm:h-8" })}
+              View My Work
             </a>
-          ))}
+          </div>
         </div>
-        <a
-          href="#projects"
-          className="inline-block bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-        >
-          View My Work
-        </a>
       </div>
     </section>
   );
