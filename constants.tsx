@@ -10,8 +10,8 @@ const TSIconPlaceholder: React.FC = () => <span className="font-bold text-blue-4
 export const portfolioData: PortfolioData = {
   name: "BYNA VENKATESH",
   title: "Data Analyst & Python Developer",
-  bio: "Data Analyst and Python Developer with expertise in Excel, SQL, and data visualization. Achieved a 25% improvement in data-driven outcomes through effective analysis. Experienced in developing SQL solutions and creating dashboards.",
-  aboutMe: `I am a Data Analyst and Python Developer based in Andhra Pradesh, India. I specialize in Excel, SQL, Power BI, and data visualization. My experience includes delivering analytics for 10,000+ employees, building interactive dashboards, and automating reporting processes. I am passionate about transforming data into actionable insights and driving business outcomes.`,
+  bio: "Recent Electronics and Communication Engineering graduate with expertise in data analysis and visualization. Proficient in Python, SQL, and Power BI, with hands-on experience in developing dynamic dashboards and deriving actionable insights from complex datasets.",
+  aboutMe: `I am a passionate data analyst with a Bachelor's degree in Electronics and Communication Engineering. My technical journey has equipped me with strong analytical skills and programming expertise in Python and SQL. Through various projects, I've developed a keen eye for transforming raw data into meaningful visualizations using Power BI, helping stakeholders make data-driven decisions. I am enthusiastic about leveraging technology to solve real-world problems and continuously expanding my knowledge in the field of data analytics.`,
   navLinks: [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
@@ -19,18 +19,22 @@ export const portfolioData: PortfolioData = {
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
   ],
-  contact: {
-    phone: "7995798027",
-    email: "venkateshbyna14@gmail.com",
-    location: "Andhra Pradesh, India",
-  },
+
   projects: [
     {
       id: "proj1",
-      title: "Airbnb Analytics",
-      description: "Analyzed 20,000+ Airbnb listings, revealing pricing trends that led to a 15% increase in occupancy rates. Built predictive models (85% accuracy) for pricing and occupancy, and delivered Power BI visualizations for stakeholders.",
-      technologies: ["Python", "Pandas", "Power BI", "Excel"],
-      imageUrl: "https://picsum.photos/seed/airbnb/600/400",
+      title: "User Authentication System",
+      description: "Developed a secure user authentication system with registration and login functionality. Implemented data validation, password hashing, and secure session management. Features include real-time validation, user data management, and secure authentication flows.",
+      technologies: ["Python", "HTML/CSS", "JavaScript", "SQL", "Flask"],
+      imageUrl: "https://picsum.photos/seed/auth/600/400",
+      repoUrl: "https://github.com/venkey024/user-authentication-form",
+    },
+    {
+      id: "proj2",
+      title: "Data Analytics Dashboard",
+      description: "Created interactive Power BI dashboards analyzing performance metrics for 10,000+ employees. Implemented data modeling, ETL processes, and dynamic visualizations that reduced reporting time by 40% and improved decision-making efficiency.",
+      technologies: ["Power BI", "SQL", "Python", "Excel"],
+      imageUrl: "https://picsum.photos/seed/dashboard/600/400",
     },
   ],
   experiences: [

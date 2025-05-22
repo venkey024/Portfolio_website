@@ -13,17 +13,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ name, title, bio, soci
     <section id="hero" className="min-h-[calc(100vh-5rem)] flex items-center justify-center py-20 bg-white">
       <div className="text-center max-w-3xl px-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <img 
-          src={`https://picsum.photos/seed/${name.split(' ').join('')}/150/150`} 
+          src="/passphoto-min.jpg"
           alt={name}
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-sky-400 shadow-xl" 
+          className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-sky-400 shadow-xl object-cover" 
         />
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-4 drop-shadow-xl whitespace-nowrap tracking-tight">
-          Hi, I'm <span className="text-sky-600 font-extrabold">{name}</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-3 drop-shadow-lg tracking-tight">
+          Hi, I'm <span className="text-sky-600 font-extrabold">{name.split(' ').map(word => word[0] + word.slice(1).toLowerCase()).join(' ')}</span>
         </h1>
-        <p className="text-xl sm:text-2xl text-slate-700 mb-6 font-mono font-semibold drop-shadow-sm tracking-wide">
+        <p className="text-xl sm:text-2xl text-slate-700 mb-5 font-mono font-semibold drop-shadow-sm tracking-wide">
           {title}
         </p>
-        <p className="text-lg text-light-slate leading-relaxed mb-8 max-w-2xl mx-auto">
+        <p className="text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto">
           {bio}
         </p>
         <div className="flex justify-center space-x-6 mb-10">
