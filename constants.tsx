@@ -23,11 +23,10 @@ export const portfolioData: PortfolioData = {
   projects: [
     {
       id: "proj1",
-      title: "Courier Charges Verification",
-      description: "Developed an automated system to verify courier charges using Python and Excel automation. The system processes shipping data, validates charges against predefined rules, and identifies discrepancies, resulting in cost savings and improved accuracy in logistics operations.",
-      technologies: ["Python", "Excel Automation", "Data Analysis", "Pandas"],
-      imageUrl: "/courier-project.jpg",
-      repoUrl: "https://github.com/venkey024/Courier-charges-verification",
+      title: "Airbnb Analytics",
+      description: "Analyzed data from over 20,000 Airbnb listings, revealing pricing trends that led to a 15% increase in occupancy rates. Built predictive models with 85% accuracy, forecasting pricing and occupancy trends, guiding strategic business decisions. Delivered 5 Power BI visualizations, improving data comprehension for various stakeholders.",
+      technologies: ["Python", "Power BI", "Machine Learning", "Data Analysis", "SQL"],
+      imageUrl: "/airbnb-project.jpg",
     },
     {
       id: "proj2",
@@ -39,10 +38,11 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "proj3",
-      title: "Data Analytics Dashboard",
-      description: "Created interactive Power BI dashboards analyzing performance metrics for 10,000+ employees. Implemented data modeling, ETL processes, and dynamic visualizations that reduced reporting time by 40% and improved decision-making efficiency.",
-      technologies: ["Power BI", "SQL", "Python", "Excel"],
-      imageUrl: "/airbnb-project.jpg",
+      title: "Courier Charges Verification",
+      description: "Developed an automated system to verify courier charges using Python and Excel automation. The system processes shipping data, validates charges against predefined rules, and identifies discrepancies, resulting in cost savings and improved accuracy in logistics operations.",
+      technologies: ["Python", "Excel Automation", "Data Analysis", "Pandas"],
+      imageUrl: "/courier-project.jpg",
+      repoUrl: "https://github.com/venkey024/Courier-charges-verification",
     },
   ],
   experiences: [
