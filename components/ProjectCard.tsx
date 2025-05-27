@@ -11,12 +11,19 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
-      <div className="relative h-56 overflow-hidden">
-        <img 
-          src={project.imageUrl} 
-          alt={project.title} 
-          className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" 
-        />
+      <div className="relative h-56 overflow-hidden bg-gray-100">
+        {project.imageUrl && (
+          <img 
+            src={project.imageUrl}
+            alt={project.title}
+            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.onerror = null; // Prevent infinite loop
+              target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="%23CBD5E1" stroke-width="2"%3E%3Crect width="18" height="18" x="3" y="3" rx="2" ry="2"%3E%3C/rect%3E%3Ccircle cx="9" cy="9" r="2"%3E%3C/circle%3E%3Cpath d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"%3E%3C/path%3E%3C/svg%3E';
+            }}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
       <div className="p-6 flex flex-col flex-grow bg-white relative z-10">
