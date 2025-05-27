@@ -23,11 +23,12 @@ Secondary School Certificate (SSC), CGPA: 9.33
 
 ## TECHNICAL SKILLS
 
-**Database Management:** SQL (MySQL, SQLite), Database Design, Data Modeling  
-**ETL:** Data Extraction, Transformation, and Loading using SQL  
-**Data Analysis:** Python (Pandas), Python (NumPy), Excel (Advanced functions)  
-**Reporting Tools:** Power BI, Data Visualization  
+**Languages:** Python, SQL, Advanced Excel (Formulas, PivotTables, Logic)
+**Data Analysis & Processing:** Pandas, NumPy, ETL (Extraction, Transformation, Loading)
+**Data Visualization:** Power BI, Matplotlib, Seaborn, Scikit-Learn
+**Database Management:** SQL (MySQL, SQLite), Data Modeling  
 **Statistics:** Inferential, Descriptive Statistics, Testing Analysis  
+**Machine Learning:** Basic Concepts (Supervised/Unsupervised Learning, Model Evaluation)
 **Tools:** MS Office, Git/GitHub
 
 ## WORK EXPERIENCE
@@ -38,7 +39,6 @@ Secondary School Certificate (SSC), CGPA: 9.33
 **People Performance Analytics Consultant BFSI Sector**
 - Consulting: Delivered analytics for over 10,000+ frontline employees across 4+ BFSI clients, improving team performance by 20% and reducing attrition by 10%.
 - Built 10+ interactive Power BI dashboards to visualize KPIs such as productivity, 90-day attrition, underperformer trends, and headcount across 10 departments.
-- Automated 15+ Excel-based reports using formulas and logic, reducing manual effort by 35% and improving reporting speed by 40%.
 - Provided insights to Company Managers suite executives, driving workforce planning and retention strategies that improved staff stability by 18%.
 
 **Role Modeling Framework (RMF) – Internal Strategic Initiative**
@@ -46,8 +46,6 @@ Secondary School Certificate (SSC), CGPA: 9.33
 - Conducted 50+ structured interviews to capture habits, KPIs, and qualitative traits responsible for 25% higher productivity in top quartile performers.
 - Documented 12+ differentiating behaviors and used them to design 3 performance coaching frameworks for field teams.
 - Calculated cost of failure for 10+ critical roles, identifying up to 14C annual loss from delayed onboarding or untrained staff.
-- Integrated RMF insights into 5 executive dashboards and 10 consulting reports, improving leadership visibility and HR actionability.
-- Positioned RMF as a proprietary, repeatable framework adopted in 3 states and across 4 BFSI partners, increasing stakeholder satisfaction by 22%.
 
 ### Accenture — Data Analytics Virtual Internship
 *July 2024 - August 2024, Remote*
