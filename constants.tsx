@@ -26,7 +26,7 @@ export const portfolioData: PortfolioData = {
       title: "Courier Charges Verification",
       description: "Developed an automated system to verify courier charges using Python and Excel automation. The system processes shipping data, validates charges against predefined rules, and identifies discrepancies, resulting in cost savings and improved accuracy in logistics operations.",
       technologies: ["Python", "Excel Automation", "Data Analysis", "Pandas"],
-      imageUrl: "./public/courier-project.jpg",
+      imageUrl: "/courier-project.jpg",
       repoUrl: "https://github.com/venkey024/Courier-charges-verification",
     },
     {
@@ -34,7 +34,7 @@ export const portfolioData: PortfolioData = {
       title: "User Authentication System",
       description: "Developed a secure user authentication system with registration and login functionality. Implemented data validation, password hashing, and secure session management. Features include real-time validation, user data management, and secure authentication flows.",
       technologies: ["Python", "HTML/CSS", "JavaScript", "SQL", "Flask"],
-      imageUrl: "./public/auth-project.jpg",
+      imageUrl: "/authentic-project.jpeg",
       repoUrl: "https://github.com/venkey024/user-authentication-form",
     },
     {
@@ -42,7 +42,7 @@ export const portfolioData: PortfolioData = {
       title: "Data Analytics Dashboard",
       description: "Created interactive Power BI dashboards analyzing performance metrics for 10,000+ employees. Implemented data modeling, ETL processes, and dynamic visualizations that reduced reporting time by 40% and improved decision-making efficiency.",
       technologies: ["Power BI", "SQL", "Python", "Excel"],
-      imageUrl: "./public/analytics-project.jpg",
+      imageUrl: "/airbnb-project.jpg",
     },
   ],
   experiences: [
