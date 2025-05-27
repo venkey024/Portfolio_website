@@ -56,7 +56,9 @@ Secondary School Certificate (SSC), CGPA: 9.33
 ## PROJECTS
 
 ### Airbnb Analytics
-*July 2024 – August 2024*
+*July 2024 – August 2024*  
+**GitHub:** [github.com/venkey024/airbnb-analytics](https://github.com/venkey024/airbnb-analytics)  
+**Demo:** [airbnb-analytics-demo.vercel.app](https://airbnb-analytics-demo.vercel.app)
 - Analyzed data from over 20,000 Airbnb listings, revealing pricing trends that led to a 15% increase in occupancy rates.
 - Built predictive models with 85% accuracy, forecasting pricing and occupancy trends, guiding strategic business decisions.
 - Delivered 5 Power BI visualizations, improving data comprehension for various stakeholders.
