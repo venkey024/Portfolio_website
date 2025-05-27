@@ -10,23 +10,23 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-      <div className="relative h-56">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+      <div className="relative h-56 overflow-hidden">
         <img 
           src={project.imageUrl} 
           alt={project.title} 
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" 
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
-        <p className="text-gray-600 text-sm mb-4 flex-grow">{project.description}</p>
+      <div className="p-6 flex flex-col flex-grow bg-white relative z-10">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-sky-600 transition-colors">{project.title}</h3>
+        <p className="text-gray-600 text-sm mb-4 flex-grow leading-relaxed">{project.description}</p>
         <div className="mb-4">
           <p className="text-xs text-sky-600 font-mono mb-2">Technologies:</p>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
-              <span key={tech} className="bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-xs font-mono">
+              <span key={tech} className="bg-sky-50 text-sky-600 px-3 py-1 rounded-full text-xs font-mono transform transition hover:scale-105 hover:bg-sky-100">
                 {tech}
               </span>
             ))}
