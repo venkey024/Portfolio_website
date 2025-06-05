@@ -1,11 +1,7 @@
-import React from 'react';
 import { PortfolioData, SkillCategory } from './types';
 import { GitHubIcon } from './components/icons/GitHubIcon';
 import { LinkedInIcon } from './components/icons/LinkedInIcon';
 import { EmailIcon } from './components/icons/EmailIcon';
-const ReactIconPlaceholder: React.FC = () => <span className="font-bold text-sky-400">R</span>;
-const NodeJsIconPlaceholder: React.FC = () => <span className="font-bold text-green-400">N</span>;
-const TSIconPlaceholder: React.FC = () => <span className="font-bold text-blue-400">TS</span>;
 
 export const portfolioData: PortfolioData = {
   name: "BYNA VENKATESH",
@@ -22,7 +18,7 @@ export const portfolioData: PortfolioData = {
 
   projects: [
     {
-      id: "proj4",
+      id: "proj1",
       title: "Webserver Log Analysis",
       description: "Analyzed webserver logs to identify patterns, detect anomalies, and optimize server performance. Implemented log parsing, data visualization, and automated reporting.",
       technologies: ["Python", "Log Parsing", "Data Visualization", "Automation"],
@@ -31,16 +27,15 @@ export const portfolioData: PortfolioData = {
       demoUrl: "https://youtu.be/cHp_pUWdb2o",
     },
     {
-      id: "proj1",
+      id: "proj2",
       title: "Airbnb Analytics",
       description: "Analyzed data from over 20,000 Airbnb listings, revealing pricing trends that led to a 15% increase in occupancy rates. Built predictive models with 85% accuracy, forecasting pricing and occupancy trends, guiding strategic business decisions. Delivered 5 Power BI visualizations, improving data comprehension for various stakeholders.",
       technologies: ["Python", "Power BI", "Machine Learning", "Data Analysis", "SQL"],
       imageUrl: "/airbnb-project.jpg",
       repoUrl: "https://github.com/venkey024/airbnb-analytics",
-      demoUrl: "https://airbnb-analytics-demo.vercel.app",
     },
     {
-      id: "proj2",
+      id: "proj3",
       title: "User Authentication System",
       description: "Developed a secure user authentication system with registration and login functionality. Implemented data validation, password hashing, and secure session management. Features include real-time validation, user data management, and secure authentication flows.",
       technologies: ["Python", "HTML/CSS", "JavaScript", "SQL", "Flask"],
@@ -48,7 +43,7 @@ export const portfolioData: PortfolioData = {
       repoUrl: "https://github.com/venkey024/user-authentication-form",
     },
     {
-      id: "proj3",
+      id: "proj4",
       title: "Courier Charges Verification",
       description: "Developed an automated system to verify courier charges using Python and Excel automation. The system processes shipping data, validates charges against predefined rules, and identifies discrepancies, resulting in cost savings and improved accuracy in logistics operations.",
       technologies: ["Python", "Excel Automation", "Data Analysis", "Pandas"],
