@@ -28,7 +28,7 @@ export const portfolioData: PortfolioData = {
       technologies: ["Python", "Log Parsing", "Data Visualization", "Automation"],
       imageUrl: "/webserver.png",
       repoUrl: "https://github.com/venkey024/webserver-log-analysis",
-      demoUrl: "https://webserver-log-analysis-demo.vercel.app",
+      demoUrl: "https://youtu.be/cHp_pUWdb2o",
     },
     {
       id: "proj1",
