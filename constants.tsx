@@ -26,9 +26,9 @@ export const portfolioData: PortfolioData = {
       title: "Webserver Log Analysis",
       description: "Analyzed webserver logs to identify patterns, detect anomalies, and optimize server performance. Implemented log parsing, data visualization, and automated reporting.",
       technologies: ["Python", "Log Parsing", "Data Visualization", "Automation"],
-      imageUrl: "/public/webserver.png",
+      imageUrl: "/webserver.png",
       repoUrl: "https://github.com/venkey024/webserver-log-analysis",
-      demoUrl: "https://youtu.be/cHp_pUWdb2o",
+      demoUrl: "https://webserver-log-analysis-demo.vercel.app",
     },
     {
       id: "proj1",
