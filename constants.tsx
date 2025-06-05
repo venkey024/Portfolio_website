@@ -46,6 +46,15 @@ export const portfolioData: PortfolioData = {
       imageUrl: "/courier-project.jpg",
       repoUrl: "https://github.com/venkey024/Courier-charges-verification",
     },
+    {
+      id: "proj4",
+      title: "Webserver Log Analysis",
+      description: "Analyzed webserver logs to identify patterns, detect anomalies, and optimize server performance. Implemented log parsing, data visualization, and automated reporting.",
+      technologies: ["Python", "Log Parsing", "Data Visualization", "Automation"],
+      imageUrl: "https://via.placeholder.com/150",
+      repoUrl: "https://github.com/venkey024/webserver-log-analysis",
+      demoUrl: "https://youtu.be/cHp_pUWdb2o",
+    },
   ],
   experiences: [
     {
