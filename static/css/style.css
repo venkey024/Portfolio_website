@@ -1,17 +1,17 @@
 /* Custom CSS for Portfolio */
 
 :root {
-    --primary-color: #4a90e2; /* Light blue */
-    --secondary-color: #1c1c1c; /* Dark gray */
-    --dark-color: #121212; /* Dark background */
-    --light-color: #ffffff; /* Light background */
-    --text-muted: #b0b0b0; /* Muted text */
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --dark-color: #2d3748;
+    --light-color: #f7fafc;
+    --text-muted: #718096;
 }
 
 /* Base Styles */
 body {
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     padding-top: 76px;
@@ -37,8 +37,8 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: var(--secondary-color) !important;
-    color: var(--light-color);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    color: var(--dark-color);
 }
 
 .navbar-brand {
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-link {
-    color: var(--light-color);
+    color: var(--dark-color);
     transition: color 0.3s ease;
 }
 
@@ -60,8 +60,8 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
-    color: var(--light-color);
+    background: var(--light-color);
+    color: var(--dark-color);
     position: relative;
     overflow: hidden;
 }
@@ -190,7 +190,7 @@ body {
 
 /* Footer */
 footer {
-    background: var(--secondary-color);
+    background: linear-gradient(135deg, var(--dark-color) 0%, #1a202c 100%);
     color: var(--text-muted);
 }
 
@@ -199,7 +199,7 @@ footer {
 }
 
 .text-light-50:hover {
-    color: var(--primary-color) !important;
+    color: white !important;
 }
 
 /* Forms */
