@@ -13,7 +13,7 @@ body {
     background-color: var(--light-color);
     color: var(--dark-color);
     font-family: 'Inter', sans-serif;
-    line-height: 1.6;
+    line-height: 0;
     padding-top: 76px;
 }
 
