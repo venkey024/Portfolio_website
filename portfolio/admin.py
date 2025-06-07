@@ -176,6 +176,12 @@ class ContactMessageAdmin(admin.ModelAdmin):
             return []
 
 # Custom admin site header
-admin.site.site_header = "Vijay's Portfolio Admin"
-admin.site.site_title = "Portfolio Admin"
-admin.site.index_title = "Welcome to Portfolio Administration"
+try:
+    about_section = AboutSection.objects.first()
+    admin_name = about_section.title if about_section else "Portfolio"
+except:
+    admin_name = "Portfolio"
+
+admin.site.site_header = f"{admin_name} Admin"
+admin.site.site_title = f"{admin_name} Admin"
+admin.site.index_title = f"Welcome to {admin_name} Administration"
