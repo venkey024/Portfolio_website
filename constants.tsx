@@ -22,7 +22,7 @@ export const portfolioData: PortfolioData = {
       title: "Titanic Survival Prediction",
       description: "Built a machine learning model to predict passenger survival on the Titanic dataset. Explored data, engineered features, and evaluated multiple algorithms for optimal accuracy.",
       technologies: ["Python", "Pandas", "Scikit-Learn", "Machine Learning"],
-      imageUrl: "/passphoto-min.jpg", // Update with actual image if available
+      imageUrl: "/titanic suvival.jpeg", // Updated image
       repoUrl: "https://github.com/venkey024/titanic-survival-prediction",
       demoUrl: "#", // Add demo URL if available
     },
@@ -31,7 +31,7 @@ export const portfolioData: PortfolioData = {
       title: "DAMRT Customers Behaviours",
       description: "Analyzed DAMRT customer data to uncover behavioral patterns and trends. Utilized data visualization and clustering techniques to segment customers and provide actionable insights.",
       technologies: ["Python", "Data Analysis", "Visualization", "Clustering"],
-      imageUrl: "/passphoto-min.jpg", // Update with actual image if available
+      imageUrl: "/dmart.jpeg", // Updated image
       repoUrl: "https://github.com/venkey024/damrt-customers-behaviours",
       demoUrl: "#", // Add demo URL if available
     },
